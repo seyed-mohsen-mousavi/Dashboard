@@ -3,18 +3,35 @@ import Rooms from "./Rooms";
 import BedRoom from "./BedRoom";
 import Speakers from "./Speakers";
 import LivingRoom from "./LivingRoom";
+import { motion } from "framer-motion";
 
 function Container() {
   return (
     <div className="grid grid-cols-4 w-full gap-5">
-      <div className="relative col-span-3 xl:h-[30rem] 2xl:h-[35 rem] rounded-3xl overflow-hidden">
-        <div className="absolute top-5 px-5 font-peyda-mdeium z-10 text-sm text-gray-900 flex justify-between w-full">
-          <div className="bg-white px-4 py-1.5 rounded-full flex items-center gap-2">
-            <div className="size-3 bg-red-500 rounded-full animate-ping" /> زنده
+      <div className="relative col-span-3 xl:h-[30rem] 2xl:h-[35rem] rounded-3xl overflow-hidden">
+        <motion.div
+          className="absolute top-5 px-5 font-peyda-mdeium z-10 text-sm text-gray-900 flex justify-between w-full"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.div
+            className="bg-white px-4 py-1.5 rounded-full flex items-center gap-2"
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="size-3 bg-red-500 rounded-full animate-ping" />
+            زنده
             <div className="size-3 bg-red-500 rounded-full absolute" />
-          </div>
+          </motion.div>
           <div className="flex gap-2 cursor-default">
-            <div className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-2">
+            <motion.div
+              className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-2"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
               <svg
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -40,16 +57,31 @@ function Container() {
               <p className="flex items-center pt-1">
                 C°<span>24</span>
               </p>
-            </div>
-            <div className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-2">
+            </motion.div>
+            <motion.div
+              className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-2"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               <BoltIcon className="size-5" />
               <p className="pt-1">350w</p>
-            </div>
-            <div className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-2">
+            </motion.div>
+            <motion.div
+              className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-2"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               <ShareIcon className="size-4 scale-x-[-1]" />
               <p className="pt-1">50%</p>
-            </div>
-            <div className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-2">
+            </motion.div>
+            <motion.div
+              className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-2"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -90,13 +122,16 @@ function Container() {
                 </g>
               </svg>
               <p className="pt-1">80%</p>
-            </div>
+            </motion.div>
           </div>
-        </div>
-        <img
+        </motion.div>
+        <motion.img
           src="/image/Catena.webp"
           alt=""
           className="w-full h-full object-cover scale-x-[-1] aspect-video"
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
         />
       </div>
       <Rooms />
