@@ -32,7 +32,7 @@ function Rooms() {
   ];
 
   return (
-    <div className="bg-transparent bg-gradient-to-b from-[#d6d9e8] to-[#f5e9d1] rounded-3xl p-5">
+    <div className="bg-transparent bg-gradient-to-b from-[#d6d9e8] to-[#f5e9d1] rounded-3xl p-5 col-span-3 md:col-span-1">
       <div className="flex justify-between w-full items-center p-1">
         <h3 className="text-lg font-peyda-mdeium font-semibold text-gray-800">
           اتاق ها

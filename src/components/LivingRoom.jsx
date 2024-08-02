@@ -2,7 +2,7 @@ import { ChevronDownIcon, ExclamationCircleIcon } from "@heroicons/react/24/outl
 
 function LivingRoom() {
   return (
-    <div className="rounded-3xl p-5 bg-[#a8acb7]">
+    <div className="rounded-3xl p-5 bg-[#a8acb7] 2xl:block hidden ">
       <div className="text-white flex justify-between">
         <button className="flex items-center gap-3 font-peyda-mdeium text-lg">
           هال

@@ -33,7 +33,7 @@ function Speakers() {
   };
 
   return (
-    <div className="bg-[#e6e7e9] p-5 rounded-3xl">
+    <div className="bg-[#e6e7e9] p-5 rounded-3xl 2xl:col-span-1 col-span-2">
       <div className="text-gray-800 flex justify-between">
         <div>
           <button className="flex items-center gap-3 font-peyda-mdeium font-semibold">

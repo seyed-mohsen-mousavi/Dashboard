@@ -8,7 +8,7 @@ import { TempIcon, WindIcon } from "../ui/icons";
 
 function Container() {
   return (
-    <div className="grid grid-cols-4 w-full gap-5">
+    <div className="flex flex-col  md:grid md:grid-cols-3 lg:grid-cols-4 w-full gap-5 mb-20">
       <div className="relative col-span-3 xl:h-[30rem] 2xl:h-[35rem] rounded-3xl overflow-hidden">
         <motion.div
           className="absolute top-5 px-5 font-peyda-mdeium z-10 text-sm text-gray-900 flex justify-between w-full"
@@ -26,7 +26,7 @@ function Container() {
             زنده
             <div className="size-3 bg-red-500 rounded-full absolute" />
           </motion.div>
-          <div className="flex gap-2 cursor-default">
+          <div className="hidden sm:flex gap-2 cursor-default">
             <motion.div
               className="bg-white/50 backdrop-blur px-4 py-1.5 rounded-full flex items-center gap-2"
               initial={{ opacity: 0, y: 20 }}
@@ -75,6 +75,46 @@ function Container() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         />
+      </div>
+      <div className="flex sm:hidden cursor-default gap-0.5 text-sm  justify-evenly w-full">
+        <motion.div
+          className="bg-gray-300 text-gray-900 px-4 py-1.5 rounded-xl  flex items-center gap-2"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <TempIcon className="size-5" />
+          <p className="flex items-center pt-1">
+            C°<span>24</span>
+          </p>
+        </motion.div>
+        <motion.div
+          className="bg-gray-300 text-gray-900 px-4 py-1.5 rounded-xl  flex items-center gap-2"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <BoltIcon className="size-5" />
+          <p className="pt-1">350w</p>
+        </motion.div>
+        <motion.div
+          className="bg-gray-300 text-gray-900 px-4 py-1.5 rounded-xl  flex items-center gap-2"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <ShareIcon className="size-4 scale-x-[-1]" />
+          <p className="pt-1">50%</p>
+        </motion.div>
+        <motion.div
+          className="bg-gray-300 text-gray-900 px-4 py-1.5 rounded-xl  flex items-center gap-2"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          <WindIcon className="size-5" />
+          <p className="pt-1">80%</p>
+        </motion.div>
       </div>
       <Rooms />
       <BedRoom />

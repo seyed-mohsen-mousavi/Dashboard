@@ -42,7 +42,7 @@ function BedRoom() {
   };
 
   return (
-    <div className="relative col-span-2 bg-[#e6e7e9] p-5 rounded-3xl">
+    <div className="relative col-span-2 bg-[#e6e7e9] p-5 rounded-3xl flex flex-col">
       <div className="text-gray-800 flex justify-between">
         <div>
           <button className="flex items-center gap-3 font-peyda-mdeium font-semibold">
@@ -64,7 +64,7 @@ function BedRoom() {
           </label>
         </div>
       </div>
-      <div className="relative flex items-center w-52 mx-auto">
+      <div className="relative flex items-center w-32 sm:w-40 lg:w-44 2xl:w-52 mx-auto my-16 sm:my-auto">
         <motion.img
           src="/image/vacuumCleaner.webp"
           className="w-full object-cover mx-auto my-2"
@@ -113,7 +113,7 @@ function BedRoom() {
           جارو برقی خاموش است
         </p>
       </motion.div>
-      <div className="flex w-full gap-3">
+      <div className="flex flex-col xl:flex-row w-full gap-3">
         <div className="bg-gray-300 rounded-full flex items-center p-1.5">
           <div className="bg-white p-2 rounded-full">
             <CubeIcon className="size-5 stroke-gray-400" />

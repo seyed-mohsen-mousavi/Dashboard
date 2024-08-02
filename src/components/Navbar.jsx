@@ -9,7 +9,7 @@ import {
 import { TempIcon } from "../ui/icons";
 function Navbar() {
   return (
-    <div className="ml-5 my-2 flex flex-col justify-between sticky">
+    <div className="ml-5 my-2 flex-col justify-between sticky md:flex hidden">
       <a href="">
         <img
           src="/image/138166955.jpeg"
