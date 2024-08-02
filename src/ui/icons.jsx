@@ -1,6 +1,69 @@
 // Icons.js
-import React from 'react';
-
+export const WindIcon = (props) => (
+  <svg
+    {...props}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></g>
+    <g id="SVGRepo_iconCarrier">
+      <path
+        d="M2 15H18.5C20.43 15 22 16.57 22 18.5C22 20.43 20.43 22 18.5 22C16.57 22 15 20.43 15 18.5V18"
+        stroke="#000"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+      <path
+        d="M2 12H18.5C20.42 12 22 10.43 22 8.5C22 6.58 20.42 5 18.5 5C16.58 5 15 6.57 15 8.5V9"
+        stroke="#000"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+      <path
+        d="M2 9H9.31C10.8 9 12 7.79 12 6.31C12 4.82 10.79 3.62 9.31 3.62C7.82 3.62 6.62 4.83 6.62 6.31V6.69"
+        stroke="#000"
+        strokeWidth="1.5"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></path>
+    </g>
+  </svg>
+);
+export const TempIcon = (props) => (
+  <svg
+    {...props}
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="#000000"
+  >
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g
+      id="SVGRepo_tracerCarrier"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    ></g>
+    <g id="SVGRepo_iconCarrier">
+      <g>
+        <path fill="none" d="M0 0h24v24H0z"></path>
+        <path
+          fillRule="nonzero"
+          d="M8 5a4 4 0 1 1 8 0v5.255a7 7 0 1 1-8 0V5zm1.144 6.895a5 5 0 1 0 5.712 0L14 11.298V5a2 2 0 1 0-4 0v6.298l-.856.597zm1.856.231V5h2v7.126A4.002 4.002 0 0 1 12 20a4 4 0 0 1-1-7.874zM12 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+        ></path>
+      </g>
+    </g>
+  </svg>
+);
 export const BedroomIcon = (props) => (
   <svg fill="#000000" viewBox="0 0 511.999 511.999" {...props}>
     <path d="M494.565,208.205c-6.121,0-11.251,3.141-14.387,7.894l-24.288-36.256v-50.833c0-29.541-24.435-53.028-53.974-53.028 H110.082c-29.539,0-53.974,23.488-53.974,53.027v50.833l-24.338,36.256c-3.136-4.753-8.317-7.894-14.438-7.894 C7.65,208.203,0,216.054,0,225.738v155.883c-0.001,9.685,7.648,16.991,17.333,16.991h13.058v19.872 c0,9.684,7.851,17.534,17.534,17.534s17.534-7.851,17.534-17.534v-19.872h381.078v19.872c0,9.684,7.851,17.534,17.534,17.534 s17.534-7.851,17.534-17.534v-19.872h13.058c9.684,0,17.334-7.306,17.334-16.99V225.739 C511.999,216.055,504.249,208.205,494.565,208.205z M91.177,129.008c0-10.203,8.703-17.959,18.905-17.959h291.832 c10.203,0,18.905,7.756,18.905,17.959v38.151h-15.37c0.103-0.767,0.174-1.543,0.174-2.338c0-9.684-7.851-17.534-17.534-17.534 H123.908c-9.684,0-17.534,7.851-17.534,17.534c0,0.795,0.071,1.571,0.174,2.338H91.177V129.008z M83.855,201.941 c0.866,0.132,1.744,0.286,2.647,0.286h341.79l14.329,21.041H69.376L83.855,201.941z M476.93,363.543H35.067V258.337H476.93 V363.543z" />
@@ -25,6 +88,6 @@ export const HallIcon = (props) => (
 
 export const BathroomIcon = (props) => (
   <svg fill="#000000" viewBox="0 0 24 24" {...props}>
-    <path d="M12 4V1h-2v3H7V1H5v3H2v2h3v6.586l-1.293 1.293c-.189.188-.293.439-.293.707s.104.518.293.707L5 15.414V18c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-2.586l1.293-1.293c.189-.188.293-.439.293-.707s-.104-.518-.293-.707L19 10.586V4h3V2h-3V1h-2v3h-3zm-1 1h2V2h-2v3zm-2 6v5H7v-2H6v2H5v-5h4zm6 0v5h-1v-2h-1v2h-1v-5h4zm-5 2h2v2h-2v-2zm4 0h2v2h-2v-2z"/>
+    <path d="M12 4V1h-2v3H7V1H5v3H2v2h3v6.586l-1.293 1.293c-.189.188-.293.439-.293.707s.104.518.293.707L5 15.414V18c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-2.586l1.293-1.293c.189-.188.293-.439.293-.707s-.104-.518-.293-.707L19 10.586V4h3V2h-3V1h-2v3h-3zm-1 1h2V2h-2v3zm-2 6v5H7v-2H6v2H5v-5h4zm6 0v5h-1v-2h-1v2h-1v-5h4zm-5 2h2v2h-2v-2zm4 0h2v2h-2v-2z" />
   </svg>
 );
